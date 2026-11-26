@@ -1,0 +1,13 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Hiragino Sans",sans-serif;background:#fff;color:#111}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem}
+form{display:grid;gap:12px}
+label{display:block;font-weight:600;margin-bottom:4px}
+select,input,button{width:100%;min-height:44px;font-size:1rem;padding:8px}
+.buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+button{cursor:pointer}
+.card{border:1px solid #888;border-radius:8px;padding:12px;margin:12px 0}
+.card h3{margin:0 0 8px;font-size:1.1rem}
+footer{font-size:.85rem;opacity:.85;margin-top:24px;word-break:break-all}
+@media (prefers-color-scheme: dark){body{background:#121212;color:#eee}.card{border-color:#666}}

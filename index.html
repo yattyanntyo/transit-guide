@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三枚橋〜獨協大学前〈草加松原〉〜草加 経路案内</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>通勤経路案内</h1>
+<form id="searchForm" onsubmit="return false">
+<div><label for="from">出発駅</label><select id="from"></select></div>
+<div><button type="button" id="swapBtn" aria-label="出発駅と到着駅を入れ替え">⇅ 出発と到着を入れ替え</button></div>
+<div><label for="to">到着駅</label><select id="to"></select></div>
+<div><label for="date">利用日</label><input type="date" id="date"></div>
+<div><label for="time">時刻</label><input type="time" id="time"></div>
+<div><label for="mode">検索方法</label><select id="mode"><option value="depart">指定時刻以降に出発</option><option value="arrive">指定時刻までに到着</option></select></div>
+<div class="buttons"><button type="button" id="searchBtn">検索</button><button type="button" id="nowBtn">現在時刻</button></div>
+</form>
+<p id="status" aria-live="polite"></p>
+<section id="results" aria-live="polite"></section>
+<footer><p id="meta"></p></footer>
+</main>
+<script src="timetable.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
